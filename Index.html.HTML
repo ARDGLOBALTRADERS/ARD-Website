@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width" >
+      <Link rel="stylesheet" href="f:\ARD GLOBAL TRADERS\ARD Website\Style.CSS"></head>
+        <BODY>
+    
+    
+    
+            <HEADER ID="H">
+        
+            <TITLE>ARD GLOBAL TRADERS </TITLE>
+        
+
+            <DIV id="A">
+                <img SRC="f:\ARD GLOBAL TRADERS\ARD Website\ARD_LOGO.png"ID="A2"><h1>ARD GLOBAL TRADERS</h1></DIV>
+                
+                        <div id="B">
+                        <a ID="C" href="">Home</a>
+                        <a ID="C" href="">About</a>
+                        <a ID="C" href="">Product</a>
+                        <a ID="C" href="">Contact us</a>
+                        <a ID="C" href="">Gallery</a></div>
+                        
+                        <div id="C2">
+                        <img src="f:\ARD GLOBAL TRADERS\ARD Website\phone_icon.png"></div>
+                       
+                        <div id="C3">
+                        <a ID="" href="tel:+91 80120 93646">+91 80120 93646</a></div>
+                        
+
+
+                    
+            
+            
+
+    </HEADER>
+    
+    
+    
+    
+    
+   
+
+
+    <div>
+        <img src="f:\ARD GLOBAL TRADERS\ARD Website\Slider.jpeg"height="612px" width="100%">
+        
+    </div>
+
+
+    <section id="About">
+        
+        <div id="About1">
+            <label><Img src="f:\ARD GLOBAL TRADERS\ARD Website\pot1.png"height="50px"width="42px">About Us<Img src="f:\ARD GLOBAL TRADERS\ARD Website\pot1.png"height="50px"width="42px"></label>
+        </div>
+
+        <div id="About2">
+            <h1>Coco Products Supplier From India
+            </h1>
+            <p>A successful and renowned coco coir exporter and supplier from India, 
+                ARD specializes in premium quality Coco Products. We work continuously to explore and 
+                exhibit innovative collections in the industry. We also offer customized solutions to meet 
+                the unique needs of our clients. Choose ARD for all your Coco Coir needs and experience the 
+                difference in quality and service.
+
+            </p>
+            <a href=""><button>View All</button></a>
+        </div>
+
+        <div id="About3">
+            <div><img src="f:\ARD GLOBAL TRADERS\ARD Website\pexels-photo-322483.jpeg"width="500px"height="400px"></div>
+        </div>
+
+    </section>
+
+
+<section id="product">
+    
+    <div id="product1">
+        <label><Img src="f:\ARD GLOBAL TRADERS\ARD Website\pot2.1.png"height="50px"width="42px">Our Products<Img src="f:\ARD GLOBAL TRADERS\ARD Website\pot2.png"height="50px"width="42px"></label>
+    </div>
+    <div id="pro">
+    <div id="pro1">
+    <img src="f:\ARD GLOBAL TRADERS\ARD Website\Cocopeat-Block5kga.jpg"width="250px"height="200px"><h1>Cocopeat</h1>
+  </div>
+
+  <div id="pro2">
+    <img src="f:\ARD GLOBAL TRADERS\ARD Website\Cocopeat-Block5kga.jpg"width="250px"height="200px"><h1>Cocopeat</h1>
+  </div>
+
+  <div id="pro3">
+    <img src="f:\ARD GLOBAL TRADERS\ARD Website\Cocopeat-Block5kga.jpg"width="250px"height="200px"><h1>Cocopeat</h1>
+  </div>
+  <div id="pro4">
+    <img src="f:\ARD GLOBAL TRADERS\ARD Website\Cocopeat-Block5kga.jpg"width="250px"height="200px"><h1>Cocopeat</h1>
+  </div>
+
+  <div id="pro5">
+    <img src="f:\ARD GLOBAL TRADERS\ARD Website\Cocopeat-Block5kga.jpg"width="250px"height="200px"><h1>Cocopeat</h1>
+  </div>
+</div>
+</section>
+
+
+
+<section id="form">
+    <form class="contact-form" id="contactForm">
+        <h2>Contact Us</h2>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="status"></p>
+    </form>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("TrLpnzmSd-YdrBOre"); // Replace with your EmailJS Public Key
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from refreshing
+
+            emailjs.send("service_ezgj2ti", "template_w8xvn4q", {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            }).then(response => {
+                document.getElementById("status").innerText = "Message sent successfully!";
+                this.reset();
+            }).catch(error => {
+                document.getElementById("status").innerText = "Error sending message.";
+                console.error(error);
+            });
+        });
+    </script>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<footer id="K">
+    
+
+</div>
+<div id="R">        
+<div id ="Q">
+    <DIV>
+<h1>Who we Are</h1>
+<label>ARD Global Traders is one of the major player as far product selling market is concerned.We are trusted and well known company.</label></DIV>
+<h1>Our Social Links</h1>
+<DIV> 
+    <img src="c:\project\Icons\facebook-icon-logo-AEF3A8F447-seeklogo.com.png" width="20px" height="20px" alt="">
+    <img src="c:\project\Icons\Instagram_logo_2016.svg.webp"width="20px" height="20px">
+    <img src="c:\project\Icons\2496110.png"width="20px" height="20px">
+    <img src="c:\project\Icons\Youtube_logo.png"width="20px" height="20px"></DIV>
+</div> 
+<div ID="U">
+<ul>
+<li></li><h1>Quick Links</h1></li>
+<li><a id="T"href="">Home</a></li>
+<li><a id="T" href="">About</a></li>
+<li><a id="T" href="">product</a></li>
+<li><a id="T"href="">Gallery</a></li>
+<li><a id="T"href="">Feedback</a></li>
+<li><a id="T"href="">Contact</a></li>
+</ul>
+
+</div>
+<div id="W">
+<h1 ID="W1">Contact</h1>
+<Div id="X">
+<img src="c:\project\Icons\Phone.png" id="X1">
+<p ID="X2">8012093646</Div>
+<ul id="XX1">
+    <li><img src="c:\project\Icons\Mail 2.png"><Span id="X3">ardglobaltraders@gmail.com</Span></li>
+
+</ul>
+<Div id="XX2">
+<img src="c:\project\Icons\lo 2.png"id="xx22">
+<p id="xx23"> Head Office:<br>
+    316,Middle Street<br> 
+    Near Infant Jesus,<br>
+    Anaikkadu-614602.</p>
+
+</div>
+
+</div>
+<div ID="Y">
+<h2>AVAILABLE ON:</h2>
+<img src="c:\project\Icons\get.png">
+
+</div></div>
+<div>
+<hr id="A1">
+<div id="policy">
+<a ID="B2"href="">About</a>
+<a ID="B2"href="">Affiliates</a>
+<a ID="B2"href="">Careers</a>
+<a ID="B2"href="">Privarcy policy</a>
+<a ID="B2"href="">Terms of Service</a></div>
+
+</div>
+<div ID="C1">
+<p><img src="c:\project\Icons\copy.png">2025 ARD Global Traders.All Rights Reserved</p>
+</div>
+
+
+
+</footer>
+
+
+   
+
+
+</BODY>
+</html>
+
+
+
