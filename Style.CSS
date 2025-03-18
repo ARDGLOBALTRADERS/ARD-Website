@@ -217,7 +217,7 @@ border-radius: 20px;
 .contact-form button {
 margin-left: 40%;
     padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 3px;
     padding-bottom: 10px;
     background-color: rgb(141,109,62);;
     color: rgb(239,228,176);;
@@ -239,27 +239,16 @@ margin-left: 40%;
 
 
 
-
-
-
-
-
 #K
 {
-   background-color:rgba(97, 61, 6, 0.959);
-   color: rgb(239,228,176);
-
-
-    
+   background-color:rgb(109, 69, 8);
+   color:rgb(239,228,176);  
+   height: fit-content;  
 }
-
-
 #Q{
     width: 250px;
-    margin-left: 5%;  
-   
+    margin-left: 5%;
 }
-
 #R{
     display:flex;   
 }
@@ -270,28 +259,28 @@ margin-left: 40%;
 #T{
     
     text-decoration: none;
-    color: rgb(239,228,176);;
+    color:rgb(239,228,176);  
     
 }
 #T:hover{
     color: rgb(238, 123, 29);
 }
 #U{
-    margin-left: 10%;
+    margin-left: 15%;
 }
 #U li{
     list-style-type: none;
+    padding-left: 50px;
+    font-size: 125%;
     
 }
-#U li a {
-    margin-left: 50px;
-}
 #W{
-    margin-left: 5%;
+    margin-left: 15%;
 width: 300px;
 }
 #W1{
     margin-left: 55PX;
+    ;
 }
 
 #Y{
@@ -300,24 +289,25 @@ width: 300px;
 #X1{
 display: inline-block;
 margin-left: 60PX;
-margin-bottom: 0PX;
+margin-bottom: 20PX;
+font-size: 125%
 }
 #X2{
     display: inline-block;
     margin-left: 10PX;
+    font-size: 125%
 }
 #X3{
     margin-left: 10PX;
+    font-size: 125%
 }
 #XX1{
-    margin-left: 60PX;
+    margin-left: 25PX;
     list-style-type: none;
-    margin-top: 10px;
 }
 #XX2{
     margin-left: 50pX;
     list-style-type: none;
-    margin-top: 10px;
 }
 
 #xx22 {
@@ -328,7 +318,6 @@ margin-bottom: 0PX;
 }
 #xx23 {
     display: inline-block;
-    margin-left: 5px;
     
     
 }
@@ -336,11 +325,11 @@ margin-bottom: 0PX;
     margin-left: 30%;
 }
 #A1{
-    color: rgb(239,228,176);
+    color: aliceblue;
 }
 #B2{
     text-decoration: none;
-    color:rgb(239,228,176);
+    color: aliceblue;
     margin-left: 20PX;
 }
 #B2:HOVER{
@@ -348,6 +337,22 @@ margin-bottom: 0PX;
 }
 #C1{
     margin-left: 40%;
-    margin-top: 1%;
-    padding-bottom: 20px;
+    font-size: 100%
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
