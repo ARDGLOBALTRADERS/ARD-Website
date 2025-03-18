@@ -2,7 +2,7 @@
 <html>
     <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=divice-width" >
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0">
       <Link rel="stylesheet" href="style.CSS"></head>
         <BODY>
     
@@ -38,16 +38,79 @@
     </HEADER>
     
     
-    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .slider-container {
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            height:600px; width:100%;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide"><img src="f:\ARD GLOBAL TRADERS\ARD Website\Slider.jpeg"height="600px"width="1350px"  alt="Slide 1"></div>
+            <div class="slide"><img src="f:\ARD GLOBAL TRADERS\ARD Website\Slider.jpeg"height="600px"width="1350px" alt="Slide 2"></div>
+            <div class="slide"><img src="f:\ARD GLOBAL TRADERS\ARD Website\Slider.jpeg"height="600px"width="1350px"  alt="Slide 3"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script>
+        let index = 0;
+        function moveSlide(step) {
+            const slides = document.querySelectorAll(".slide");
+            index += step;
+            if (index < 0) index = slides.length - 1;
+            if (index >= slides.length) index = 0;
+            document.getElementById("slider").style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function autoSlide() {
+            moveSlide(1);
+        }
+        
+        setInterval(autoSlide, 3000); // Auto slide every 3 seconds
+    </script>
+    </script>
     
     
    
 
 
-    <div>
-        <img src="f:\ARD GLOBAL TRADERS\ARD Website\Slider.jpeg"height="612px" width="100%">
-        
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     <section id="About">
@@ -107,7 +170,7 @@
 
 <section id="form">
     <form class="contact-form" id="contactForm">
-        <h2>Contact Us</h2>
+        <label><Img src="f:\ARD GLOBAL TRADERS\ARD Website\pot2.1.png"height="40px"width="42px">Contact<Img src="f:\ARD GLOBAL TRADERS\ARD Website\pot2.png"height="40px"width="42px"></label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
         <input type="text" id="subject" name="subject" placeholder="Subject" required>
@@ -163,9 +226,11 @@
 </div>
 <div id="R">        
 <div id ="Q">
-    <DIV>
+
 <h1>Who we Are</h1>
-<label>ARD Global Traders is one of the major player as far product selling market is concerned.We are trusted and well known company.</label></DIV>
+<label>ARD Global Traders is one of the major player as far product selling market is concerned.We are trusted and well known company.</label>
+
+
 <h1>Our Social Links</h1>
 <DIV> 
     <img src="c:\project\Icons\facebook-icon-logo-AEF3A8F447-seeklogo.com.png" width="20px" height="20px" alt="">
@@ -175,7 +240,7 @@
 </div> 
 <div ID="U">
 <ul>
-<li></li><h1>Quick Links</h1></li>
+<li><h1>Quick Links</h1></li>
 <li><a id="T"href="">Home</a></li>
 <li><a id="T" href="">About</a></li>
 <li><a id="T" href="">product</a></li>
@@ -183,24 +248,25 @@
 <li><a id="T"href="">Feedback</a></li>
 <li><a id="T"href="">Contact</a></li>
 </ul>
-
 </div>
+
 <div id="W">
 <h1 ID="W1">Contact</h1>
-<Div id="X">
-<img src="c:\project\Icons\Phone.png" id="X1">
-<p ID="X2">8012093646</Div>
-<ul id="XX1">
-    <li><img src="c:\project\Icons\Mail 2.png"><Span id="X3">ardglobaltraders@gmail.com</Span></li>
 
+<Div id="X">
+<img src="c:\project\Icons\Phone.png "height="15px" id="X1">
+<p ID="X2">8012093646</Div>
+
+    <ul id="XX1">
+    <li><img src="c:\project\Icons\Mail 2.png"><Span id="X3">ardglobaltraders@gmail.com</Span></li>
 </ul>
+
 <Div id="XX2">
-<img src="c:\project\Icons\lo 2.png"id="xx22">
+<img src="c:\project\Icons\lo 2.png"height="25px" id="xx22">
 <p id="xx23"> Head Office:<br>
     316,Middle Street<br> 
     Near Infant Jesus,<br>
     Anaikkadu-614602.</p>
-
 </div>
 
 </div>
@@ -211,12 +277,7 @@
 </div></div>
 <div>
 <hr id="A1">
-<div id="policy">
-<a ID="B2"href="">About</a>
-<a ID="B2"href="">Affiliates</a>
-<a ID="B2"href="">Careers</a>
-<a ID="B2"href="">Privarcy policy</a>
-<a ID="B2"href="">Terms of Service</a></div>
+
 
 </div>
 <div ID="C1">
